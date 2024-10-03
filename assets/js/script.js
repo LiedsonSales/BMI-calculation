@@ -12,7 +12,7 @@ function scope() {
         const altura = Number(height.value);
 
 
-        if (!peso || !altura) {
+        if (!peso && !altura) {
             setResultado('Peso e Altura inválidos!', false);
             return;
         }
